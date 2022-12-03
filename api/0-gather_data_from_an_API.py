@@ -6,7 +6,6 @@ https://jsonplaceholder.typicode.com/
 
 import requests
 from sys import argv
-import json
 
 
 def data_retrieval(user_id):
