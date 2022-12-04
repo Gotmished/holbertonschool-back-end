@@ -25,10 +25,9 @@ def data_retrieval_export():
     for each_user in users:
         user_tasks = []
         for each_task in tasks:
-            # Order is strange - get() may be a better option in the future
-            order_of_details = {"task": each_task['title'],
-                                "completed": each_task['completed'],
-                                "username": each_user['username']}
+            order_of_details = {"username": each_user['username'],
+                                "task": each_task['title'],
+                                "completed": each_task['completed']}
             user_tasks.append(order_of_details)
         id_key = each_user['id']
         # In the dictionary, for key=particular ID, associate tasks
